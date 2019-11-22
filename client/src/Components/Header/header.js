@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import sample from '../../assets/images/sample.jpg';
+import logo from '../../assets/images/logo.svg';
 import { slide as Menu } from 'react-burger-menu'
 
 class Header extends React.Component {
@@ -14,14 +14,15 @@ class Header extends React.Component {
             <div className="header">
                 <div className="header__logo-search-container">
                     <div className="header__logo-container">
-                        <img className="header__logo" src={sample} />
+                        <img className="header__logo" src={logo} />
                     </div>
                     <div className="header__search-container">
                         <input className="header__search" placeholder="Search"></input>
                     </div>
                 </div>
-                <div className="header__register-container">
-                    <button className="header__register">Register</button>
+                <div className="header__button-container">
+                    <button className="header__button">LOGIN</button>
+                    <button className="header__button">REGISTER</button>
                 </div>
             </div>
         )

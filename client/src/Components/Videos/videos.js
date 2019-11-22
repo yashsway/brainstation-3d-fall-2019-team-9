@@ -16,12 +16,12 @@ import img9 from '../../assets/Archive/unnamed8.jpg';
 import img10 from '../../assets/Archive/unnamed9.jpg';
 
 
-
 class Videos extends React.Component {
 
     render() {
         return (
 <>
+            <h1 className="title">Trending TED Talks</h1>
                 <section className="videos1">
 
                     <div className="videos1-firstblock">
@@ -41,7 +41,7 @@ class Videos extends React.Component {
                     </div>
                   
                 </section>
-
+                <h1 className="curriculums">Trending TED Talks</h1>
                 <section className="videos2">
 
                     <div className="videos2-firstblock">

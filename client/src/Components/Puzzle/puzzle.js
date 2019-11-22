@@ -15,7 +15,7 @@ class Puzzle extends React.Component {
         return (
             <>
 
-            <h1>TITLE</h1>
+            
                 <section className="puzzle">
             
                     <div className="puzzle-blockA">
@@ -37,7 +37,7 @@ class Puzzle extends React.Component {
                     <div className="puzzle-blockB">
 
                         <div className="puzzle-blockB__1">
-                        
+                            <img className="img-14" src={img14} alt=""></img>
                         </div>
                     </div>
 

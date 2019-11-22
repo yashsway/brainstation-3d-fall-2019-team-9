@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 60px;
+    height: 97px;
     padding: 16px 24px 16px 24px;
     background-color: $black;
     box-sizing: border-box;
@@ -17,8 +17,8 @@
     }
 
     &__logo-container {
-        width: 40px;
-        height: 40px;
+        width: 104px;
+        height: 55px;
         border-radius: 40px;
     }
 
@@ -29,31 +29,41 @@
     }
 
     &__search-container {
-        width: 200px;
-        height: 30px;
+        width: 357px;
+        height: 43px;
         margin: 0 0 0 30px;
     }
 
     &__search {
         width: 100%;
         height: 100%;
-        border-radius: 15px;
-        border: solid 0.5px $gray;
+        border-radius: 21.5px;
+        border: solid 2px #c1c2c4;
         padding: 0 0 0 10px;
         cursor: pointer;
     }
 
-    &__register-container {
-        width: 100px;
+    &__button-container {
+        display: flex;
+        width: 500px;
         height: 30px;
         margin: 0 16px 0 0;
     }
 
-    &__register{
-        width: 100%;
-        height: 100%;
+    &__button {
+        width: 197px;
+        height: 43px;
+        margin: 0 0 0 50px;
         border-radius: 15px;
         border: solid 0.5px $gray;
+        font-weight: bold;
         cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $gray;
+            color: white;
+        }
     }
 }
