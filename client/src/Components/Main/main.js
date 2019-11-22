@@ -11,10 +11,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Puzzle />
-                <Topics />
-                <Videos />
-
-                
+                <Videos />                
             </div>
         )
     }
