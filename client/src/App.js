@@ -5,13 +5,15 @@ import './App.scss';
 import MainComponent from '../src/Components/MainComponent/mainComponent';
 
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
 
-      <MainComponent />
-      
-    </div>
-  );
+        <MainComponent />
+        
+      </div>
+    );
+    }
 }
 export default App;
