@@ -17,7 +17,7 @@ class MainComponent extends React.Component {
                         
                     <Hero />
 
-                    {/* <Main />  */}
+                    <Main /> 
 
                     <Footer />
 
