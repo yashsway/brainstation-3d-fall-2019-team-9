@@ -1,6 +1,9 @@
 import React from 'react';
 import './videos.scss';
 
+// IMAGES
+import img1 from '../../assets/Archive/unnamed.jpg'
+
 
 class Videos extends React.Component {
 
@@ -10,7 +13,7 @@ class Videos extends React.Component {
                 <section className="videos1">
 
                     <div className="videos1-firstblock">
-
+                        <img className="img-1" src={img1} alt=""></img>
                     </div>
                     <div className="videos1-secondblock">
 
