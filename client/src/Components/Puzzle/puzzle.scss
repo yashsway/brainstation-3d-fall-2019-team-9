@@ -15,7 +15,7 @@
     // background-color:grey;
     // border: 1px solid red;
     width: 400px;
-    height: 400px;
+    // height: 400px;
 
     &__1 {
         margin: 20px;
@@ -31,7 +31,14 @@
         height: 200px;
 
         &-a {
-            margin: 0px 20px 20px 220px;
+            margin: 0px 20px 0px 220px;
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        &-b {
+            margin-bottom: 200px;
             border: 1px solid red;
             width: 200px;
             height: 200px;
@@ -71,9 +78,6 @@
 }
 
 .text-box {
-    
-
-
     &__content {
         margin: 20px 0px;
         height: 420px;
@@ -81,4 +85,28 @@
         // background-color:grey;
         border: 1px solid red;
     }
+}
+
+.img-11 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-12 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-13 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-14 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
