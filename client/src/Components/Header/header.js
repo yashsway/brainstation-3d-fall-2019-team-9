@@ -3,7 +3,6 @@ import './header.scss';
 import sample from '../../assets/images/sample.jpg';
 import { slide as Menu } from 'react-burger-menu'
 
-
 class Header extends React.Component {
     showSettings (event) {
         event.preventDefault();
