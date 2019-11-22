@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.scss';
-
+import Puzzle from '../Puzzle/puzzle';
+import Videos from '../Videos/videos'
 
 class Main extends React.Component {
 
@@ -8,7 +9,9 @@ class Main extends React.Component {
         return (
 
                 <div>
-           
+                    <Puzzle />
+
+                    <Videos />
                 </div>
         )
     }
