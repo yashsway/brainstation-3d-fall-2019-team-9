@@ -1,40 +1,72 @@
 import React from 'react';
 import './puzzle.scss'
 
+const sampleData = {
+    blockData: {
+        blockOne : "Top Videos Related to Empathy: Empathy helps with management and collaboration by helping to understand the other person's perspective.",
+        blockTwo : "Cultivating curiosity at all levels helps leaders and their employees adapt to uncertain market conditions and external pressures.",
+        blockThree: "Cultivating curiosity at all levels helps leaders and their employees adapt to uncertain market conditions and external pressures.",
+        blockFour: "Cultivating curiosity at all levels helps leaders and their employees adapt to uncertain market conditions and external pressures."
+    }
+}
+
 class Puzzle extends React.Component {
+
+
+
+    state = {
+        data : sampleData.blockData.blockOne
+    }
+
+    textGenerator = () => {
+        return <p className="text-box__content">{this.state.data}</p>
+    }
+
+    resetText1 = () => {
+        this.setState({
+            data : sampleData.blockData.blockOne
+        })
+    }
+
+    resetText2 = () => {
+        this.setState({
+            data : sampleData.blockData.blockTwo
+        })
+    }
+
+    resetText3 = () => {
+        this.setState({
+            data : sampleData.blockData.blockThree
+        })
+    }
+
+    resetText4 = () => {
+        this.setState({
+            data : sampleData.blockData.blockFour
+        })
+    }
 
     render() {
         return (
             <>
-
-            <h1>TITLE</h1>
                 <section className="puzzle">
             
                     <div className="puzzle-blockA">
 
-                        <div className="puzzle-blockA__1">
+                        <div className="puzzle-blockA__1" onClick={() => {this.resetText1()}}>
                         
                         </div>
-                        <div className="puzzle-blockA__2">
-                            <div className="puzzle-blockA__2-a">
-                                1
-                            </div>
-
-                            <div className="puzzle-blockA__2-b">
-                                2
+                        <div className="puzzle-blockA__2" onClick={() => {this.resetText3()}}>
+                            <div className="puzzle-blockA__2-a" onClick={() => {this.resetText2()}}>
                             </div>
                         </div>
                     </div>
 
-                    <div className="puzzle-blockB">
-
-                        <div className="puzzle-blockAB__1">
-                        
-                        </div>
+                    <div className="puzzle-blockB" onClick={() => {this.resetText4()}}>
                     </div>
 
                     <div classname="text-box">
-                        <p className="text-box__content">text text text text text</p>
+                        {this.textGenerator()}
                     </div>
            
                 </section>
